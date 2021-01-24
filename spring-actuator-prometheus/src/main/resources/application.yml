@@ -16,3 +16,11 @@ spring:
   h2:
     console:
       enabled: true
+
+# Actuator metrics
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
